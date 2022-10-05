@@ -57,14 +57,14 @@ class Card extends React.Component {
   render() {
     return (
       <div className="container0">
-        <div className="cuando">¿CUÁNDO?</div>
+        <div className="when">WHEN?</div>
         <div className="container1">
           <span className="button1" /* onClick={this.handleClick}*/>
             &#10006;
           </span>
           <div className="content">
             <div className="head">
-              <h1>¿cuándo?</h1>
+              <h1>when?</h1>
               {/* <p className="sub">
               by
               <a href="https://codepen.io/woodwork/" target="_blank">
@@ -74,19 +74,19 @@ class Card extends React.Component {
             </div>
             <div className="body">
               <p>
-                <em>SABADO 24/9</em>
+                <em>SATURDAY 24/9</em>
                 <br />
-                de 22 a 6 horas
+                from 10 pm to 6 am
               </p>
             </div>
           </div>
         </div>
-        <div className="donde">¿DÓNDE?</div>
+        <div className="where">WHERE?</div>
         <div className="container2">
           <span className="button2">&#10006;</span>
           <div className="content">
             <div className="head">
-              <h1>¿dónde?</h1>
+              <h1>where?</h1>
               {/* <p className="sub">
               by
               <a href="https://codepen.io/woodwork/" target="_blank">
@@ -96,30 +96,24 @@ class Card extends React.Component {
             </div>
             <div className="body">
               <p>
-                <em>Balneario MARBELLA</em>
+                <em>This PLACE</em>
                 <br />
-                Av. de los Trabajadores 4350
+                This Adress 9999
               </p>
             </div>
           </div>
         </div>
-        <div className="venis">¿VENÍS?</div>
+        <div className="coming">COMING?</div>
         <div className="container3">
           <span className="button3">&#10006;</span>
           <div className="content3">
             <div className="head">
-              <h1>¿venís?</h1>
-              {/* <p className="sub">
-              by
-              <a href="https://codepen.io/woodwork/" target="_blank">
-                Joe Harry
-              </a>
-            </p> */}
+              <h1>coming?</h1>
             </div>
             <div className="body">
               <p>
-                Porfa confirmame tu asistencia <em>por SI o por NO</em> en mi
-                WhatsApp:
+                Please confirm if you can come <em>(YES or NO)</em> in this
+                WhatsApp number:
               </p>
               <div className="action-bar">
                 <a href="https://web.whatsapp.com/">WHATSAPP</a>
