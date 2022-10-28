@@ -4,7 +4,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: whitesmoke;
   /* background: #8ce2aa; */
   background-image: url("../assets/happy-birthday.jpg");
   background-size: 110vw;
@@ -23,17 +23,18 @@ h1 {
   position: absolute;
   top: -6.2vh;
   width: 100%;
-  color: rgba(0, 0, 0, 0.303);
+  color: whitesmoke;
 }
 
 p {
   font-size: 16px;
+  line-height: 20px;
   padding: 0 20px;
   margin: 10px 0;
 }
 
 em {
-  font-style: normal;
+  font: bold italic 18px/30px Verdana;
   color: #ffc400;
 }
 
@@ -43,6 +44,11 @@ a {
   text-decoration: none;
   padding-right: 10px;
   cursor: pointer;
+}
+
+label {
+  font: normal italic 16px Roboto, sans-serif;
+  color: red;
 }
 
 .sub {
@@ -270,6 +276,6 @@ a {
 
 .action-bar a {
   text-transform: uppercase;
-  line-height: 52px;
+  line-height: 30px;
   color: #ffc400;
 }

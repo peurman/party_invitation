@@ -57,14 +57,14 @@ class Card extends React.Component {
   render() {
     return (
       <div className="container0">
-        <div className="when">WHEN?</div>
+        <div className="when">WHEN TO COME?</div>
         <div className="container1">
           <span className="button1" /* onClick={this.handleClick}*/>
             &#10006;
           </span>
           <div className="content">
             <div className="head">
-              <h1>when?</h1>
+              <h1>when??</h1>
               {/* <p className="sub">
               by
               <a href="https://codepen.io/woodwork/" target="_blank">
@@ -74,14 +74,17 @@ class Card extends React.Component {
             </div>
             <div className="body">
               <p>
-                <em>SATURDAY 24/9</em>
+                <b>YOU MUST</b> come on <br />
+                <em>SATURDAY MM/DD at 10 pm</em>
                 <br />
-                from 10 pm to 6 am
+                Party ends at 6 am
+                <br />
+                <label>(doors will be closed till that hour!)</label>
               </p>
             </div>
           </div>
         </div>
-        <div className="where">WHERE?</div>
+        <div className="where">WHERE TO GO?</div>
         <div className="container2">
           <span className="button2">&#10006;</span>
           <div className="content">
@@ -103,20 +106,29 @@ class Card extends React.Component {
             </div>
           </div>
         </div>
-        <div className="coming">COMING?</div>
+        <div className="coming">
+          {" "}
+          <span Style={"text-decoration:line-through"}>RSVP</span>
+          &nbsp;COMING OR WHAT?
+        </div>
+
         <div className="container3">
           <span className="button3">&#10006;</span>
           <div className="content3">
             <div className="head">
-              <h1>coming?</h1>
+              <h1>YES or NO?</h1>
             </div>
             <div className="body">
               <p>
-                Please confirm if you can come <em>(YES or NO)</em> in this
-                WhatsApp number:
+                Please WhatsApp me <em>YES</em> or <em>NO</em> trough this link:
               </p>
               <div className="action-bar">
                 <a href="https://web.whatsapp.com/">WHATSAPP</a>
+                <br />
+                <label>
+                  No answer = NO entry <br />
+                  (unless donating a USD100 gift)
+                </label>
               </div>
             </div>
           </div>
