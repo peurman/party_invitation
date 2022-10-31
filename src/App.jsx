@@ -9,7 +9,6 @@ function App() {
       element: <Card />,
     },
   ]);
-
   return element;
 }
 

@@ -1,12 +1,12 @@
 import React from "react";
-import "./Card.css";
+import "./Card.sass";
 import $ from "jquery";
 
 var button1 = false;
 var button2 = false;
 var button3 = false;
 
-class Card extends React.Component {
+class Cardos extends React.Component {
   constructor() {
     super();
     this.handleClick = this.handleClick.bind(this);
@@ -59,18 +59,10 @@ class Card extends React.Component {
       <div className="container0">
         <div className="when">WHEN TO COME?</div>
         <div className="container1">
-          <span className="button1" /* onClick={this.handleClick}*/>
-            &#10006;
-          </span>
+          <span className="button1">&#10006;</span>
           <div className="content">
             <div className="head">
               <h1>when??</h1>
-              {/* <p className="sub">
-              by
-              <a href="https://codepen.io/woodwork/" target="_blank">
-                Joe Harry
-              </a>
-            </p> */}
             </div>
             <div className="body">
               <p>
@@ -90,12 +82,6 @@ class Card extends React.Component {
           <div className="content">
             <div className="head">
               <h1>where?</h1>
-              {/* <p className="sub">
-              by
-              <a href="https://codepen.io/woodwork/" target="_blank">
-                Joe Harry
-              </a>
-            </p> */}
             </div>
             <div className="body">
               <p>
@@ -107,14 +93,13 @@ class Card extends React.Component {
           </div>
         </div>
         <div className="coming">
-          {" "}
           <span Style={"text-decoration:line-through"}>RSVP</span>
           &nbsp;COMING OR WHAT?
         </div>
 
         <div className="container3">
           <span className="button3">&#10006;</span>
-          <div className="content3">
+          <div className="content">
             <div className="head">
               <h1>YES or NO?</h1>
             </div>
@@ -122,12 +107,11 @@ class Card extends React.Component {
               <p>
                 Please WhatsApp me <em>YES</em> or <em>NO</em> trough this link:
               </p>
-              <div className="action-bar">
-                <a href="https://web.whatsapp.com/">WHATSAPP</a>
+              <div className="actionBar">
+                <a href="https://web.whatsapp.com/">whatsapp</a>
                 <br />
                 <label>
                   No answer = NO entry <br />
-                  (unless donating a USD100 gift)
                 </label>
               </div>
             </div>
@@ -138,4 +122,4 @@ class Card extends React.Component {
   }
 }
 
-export default Card;
+export default Cardos;

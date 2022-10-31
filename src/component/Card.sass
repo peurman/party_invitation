@@ -1,0 +1,93 @@
+@use '../sass' as *
+
+h1
+  font-weight: 700
+  font-size: 22px
+  position: absolute
+  top: -6.2vh
+  width: 100%
+  color: $mainColor
+
+p
+  font-size: 16px
+  line-height: 20px
+  padding: 0 20px
+  margin: 10px 0
+
+em
+  font: bold italic 18px/30px Verdana
+  color: $specialColor
+
+a
+  font-style: normal
+  color: $specialColor
+  text-decoration: none
+  padding-right: 10px
+  cursor: pointer
+
+label
+  font: normal italic 16px Roboto, sans-serif
+  color: $attentionColor
+
+.sub
+  margin: 0
+
+.button1,
+.button2,
+.button3
+  @include buttons
+
+.expand .button1,
+.expand .button2,
+.expand .button3
+  transform: rotate(630deg)
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1)
+
+.when
+  @include everyPart($blueLight,$blueDark, 13vh)
+
+.where
+  @include everyPart($pinkLight,$pinkDark, 43vh)
+
+.coming
+  @include everyPart($greenLight,$greenDark, 73vh)
+
+.container1
+  @include containerTemplate($blueLight, $shadowBox1, $shadowBox2, 3vh, 190px)
+
+.container2
+  @include containerTemplate($pinkLight, $shadowBox1, $shadowBox2, 33vh, 190px)
+
+.container3
+  @include containerTemplate($greenLight, $shadowBox1, $shadowBox2, 63vh, 235px)
+
+.content
+  transform: translateY(100%)
+  width: 100%
+  height: 100%
+  opacity: 0
+  text-align: left
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s 0.2s
+  .expand &
+    transform: translateY(0px)
+    opacity: 1
+    transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.05s, opacity 0s
+  & .head
+    text-align: center
+  & .body
+    color: $blackColor
+    background-color: $mainColor
+    text-align: center
+    width: 100%
+    height: 100%
+    padding: 5px 0
+    box-sizing: border-box
+
+.actionBar
+  padding-left: 15px
+  border-top: 1px solid $greyLine
+  width: 100%
+  & a
+    text-transform: uppercase
+    line-height: 30px
+    color: $specialColor
