@@ -29,8 +29,48 @@ label
   font: normal italic 16px Roboto, sans-serif
   color: $attentionColor
 
-.sub
-  margin: 0
+.fade-in-title
+  @include centerMeColumn
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  font-size: 60px
+  // background-color: rgba(0, 0, 0, 0.98)
+  background-image: url("../assets/party-rays.jpg")
+  background-size: cover
+  z-index: 9
+  -webkit-animation: fadeout 6s linear forwards
+  animation: fadeout 6s linear forwards
+@keyframes fadeout
+  0%
+    opacity: 1
+  50%
+    opacity: 1
+    font-size: 90px
+  70%
+    opacity: 0
+  100%
+    opacity: 0
+    font-size: 120px
+    z-index: -1
+@-webkit-keyframes fadeout
+  0%
+  opacity: 1
+  50%
+  opacity: 1
+  font-size: 120px
+  100%
+  opacity: 0
+  font-size: 180px
+  z-index: -1
+
+.title
+  text-align: center
+  font-family: 'Cascadia Code'
+  color: $pinkDark
+  text-shadow: 3px 1px 4px $pinkLight
 
 .button1,
 .button2,

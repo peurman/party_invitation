@@ -15,11 +15,12 @@ body
   margin: 0
   padding: 0
   color: whitesmoke
-  background-image: url("../assets/happy-birthday.jpg")
-  background-size: 110vw
-@media only screen and (max-width: 800px)
-  body
-    background-size: 155vh
+  background-image: url("../assets/party-rays.jpg")
+  background-size: cover
+  background-position: right bottom
+  background-size: max(100vh, 100vw)
+  @media only screen and (max-width: 800px)
+    background-size: 100vh
 
 @mixin centerMeRow
   display: flex
@@ -49,7 +50,7 @@ body
 
 @mixin everyPart($primaryColor,$secondaryColor, $positionTop )
   color: $primaryColor
-  font-size: 28px
+  font-size: 0.09 * 100vw
   font-family: "Candara"
   font-weight: bolder
   text-shadow: 2px 1px 2px $secondaryColor
@@ -59,6 +60,8 @@ body
   top: $positionTop
   width: 100%
   @include centerMeColumn
+  @media only screen and (min-width: 800px)
+    font-size: 60px
 
 @mixin containerTemplate($primaryColor, $shadow1, $shadow2, $positionTop, $height )
   position: absolute

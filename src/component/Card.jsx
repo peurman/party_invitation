@@ -6,7 +6,7 @@ var button1 = false;
 var button2 = false;
 var button3 = false;
 
-class Cardos extends React.Component {
+class Card extends React.Component {
   constructor() {
     super();
     this.handleClick = this.handleClick.bind(this);
@@ -57,12 +57,19 @@ class Cardos extends React.Component {
   render() {
     return (
       <div className="container0">
+        <div className="fade-in-title">
+          <h4 className="title">
+            MY
+            <br />
+            PARTY
+          </h4>
+        </div>
         <div className="when">WHEN TO COME?</div>
         <div className="container1">
           <span className="button1">&#10006;</span>
           <div className="content">
             <div className="head">
-              <h1>when??</h1>
+              <h1>wheeen?</h1>
             </div>
             <div className="body">
               <p>
@@ -81,7 +88,7 @@ class Cardos extends React.Component {
           <span className="button2">&#10006;</span>
           <div className="content">
             <div className="head">
-              <h1>where?</h1>
+              <h1>wheeere?</h1>
             </div>
             <div className="body">
               <p>
@@ -93,7 +100,7 @@ class Cardos extends React.Component {
           </div>
         </div>
         <div className="coming">
-          <span Style={"text-decoration:line-through"}>RSVP</span>
+          <span style={{ textDecoration: "line-through" }}>RSVP</span>
           &nbsp;COMING OR WHAT?
         </div>
 
@@ -101,11 +108,11 @@ class Cardos extends React.Component {
           <span className="button3">&#10006;</span>
           <div className="content">
             <div className="head">
-              <h1>YES or NO?</h1>
+              <h1>Of course coming...</h1>
             </div>
             <div className="body">
               <p>
-                Please WhatsApp me <em>YES</em> or <em>NO</em> trough this link:
+                Please whatsapp me <em>YES</em> or <em>NO</em> trough this link:
               </p>
               <div className="actionBar">
                 <a href="https://web.whatsapp.com/">whatsapp</a>
@@ -122,4 +129,4 @@ class Cardos extends React.Component {
   }
 }
 
-export default Cardos;
+export default Card;
