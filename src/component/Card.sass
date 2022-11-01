@@ -15,7 +15,7 @@ p
   margin: 10px 0
 
 em
-  font: bold italic 18px/30px Verdana
+  font: bold italic 18px/30px "sansita-black"
   color: $specialColor
 
 a
@@ -26,51 +26,18 @@ a
   cursor: pointer
 
 label
-  font: normal italic 16px Roboto, sans-serif
+  font: normal italic 16px "sansita-regular"
   color: $attentionColor
 
 .fade-in-title
-  @include centerMeColumn
-  position: absolute
-  top: 0
-  bottom: 0
-  left: 0
-  right: 0
-  font-size: 60px
-  // background-color: rgba(0, 0, 0, 0.98)
-  background-image: url("../assets/party-rays.jpg")
-  background-size: cover
-  z-index: 9
-  -webkit-animation: fadeout 6s linear forwards
-  animation: fadeout 6s linear forwards
-@keyframes fadeout
-  0%
-    opacity: 1
-  50%
-    opacity: 1
-    font-size: 90px
-  70%
-    opacity: 0
-  100%
-    opacity: 0
-    font-size: 120px
-    z-index: -1
-@-webkit-keyframes fadeout
-  0%
-  opacity: 1
-  50%
-  opacity: 1
-  font-size: 120px
-  100%
-  opacity: 0
-  font-size: 180px
-  z-index: -1
+  @include fadingText
 
 .title
   text-align: center
-  font-family: 'Cascadia Code'
+  font-family: 'sansita-black'
+  letter-spacing: 3px
   color: $pinkDark
-  text-shadow: 3px 1px 4px $pinkLight
+  text-shadow: 3px 1px 4px $mainColor
 
 .button1,
 .button2,
@@ -99,7 +66,7 @@ label
   @include containerTemplate($pinkLight, $shadowBox1, $shadowBox2, 33vh, 190px)
 
 .container3
-  @include containerTemplate($greenLight, $shadowBox1, $shadowBox2, 63vh, 235px)
+  @include containerTemplate($greenLight, $shadowBox1, $shadowBox2, 63vh, max(0.33*100vh,0.65*100vw))
 
 .content
   transform: translateY(100%)
@@ -113,7 +80,9 @@ label
     opacity: 1
     transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.05s, opacity 0s
   & .head
-    text-align: center
+    text-align: left
+    margin-left: 20px
+    margin-top: min(0.015*100vh,10px)
   & .body
     color: $blackColor
     background-color: $mainColor
@@ -124,10 +93,16 @@ label
     box-sizing: border-box
 
 .actionBar
-  padding-left: 15px
+  padding-top: 5px
+  padding-bottom: 0
   border-top: 1px solid $greyLine
   width: 100%
+  margin: 0
   & a
+    padding: 0
     text-transform: uppercase
     line-height: 30px
     color: $specialColor
+    img
+      width: 50px
+      height: 50px

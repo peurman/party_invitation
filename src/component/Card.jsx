@@ -1,6 +1,7 @@
 import React from "react";
 import "./Card.sass";
 import $ from "jquery";
+import logo from "../assets/images/whatsapp_logo.png";
 
 var button1 = false;
 var button2 = false;
@@ -59,9 +60,9 @@ class Card extends React.Component {
       <div className="container0">
         <div className="fade-in-title">
           <h4 className="title">
-            MY
+            My
             <br />
-            PARTY
+            Party
           </h4>
         </div>
         <div className="when">WHEN TO COME?</div>
@@ -115,7 +116,9 @@ class Card extends React.Component {
                 Please whatsapp me <em>YES</em> or <em>NO</em> trough this link:
               </p>
               <div className="actionBar">
-                <a href="https://web.whatsapp.com/">whatsapp</a>
+                <a href="https://web.whatsapp.com/send?phone=+5491144444444&text=YES&app_absent=0">
+                  <img src={logo} alt="WhatsApp logo" />
+                </a>
                 <br />
                 <label>
                   No answer = NO entry <br />

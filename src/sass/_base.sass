@@ -9,13 +9,13 @@
       opacity: 1
 
 body
-  font-family: Roboto, sans-serif
+  font-family: 'sansita-regular'
   width: 100%
   height: 100%
   margin: 0
   padding: 0
   color: whitesmoke
-  background-image: url("../assets/party-rays.jpg")
+  background-image: url("../assets/images/party-rays.jpg")
   background-size: cover
   background-position: right bottom
   background-size: max(100vh, 100vw)
@@ -50,9 +50,10 @@ body
 
 @mixin everyPart($primaryColor,$secondaryColor, $positionTop )
   color: $primaryColor
-  font-size: 0.09 * 100vw
-  font-family: "Candara"
-  font-weight: bolder
+  font-size: 0.08 * 100vw
+  font-family: "sansita-blackitalic"
+  letter-spacing: 1.5px
+  // font-weight: bolder
   text-shadow: 2px 1px 2px $secondaryColor
   -moz-text-shadow: 2px 1px 2px $secondaryColor
   -webkit-text-shadow: 2px 1px 2px $secondaryColor
@@ -61,7 +62,7 @@ body
   width: 100%
   @include centerMeColumn
   @media only screen and (min-width: 800px)
-    font-size: 60px
+    font-size: 50px
 
 @mixin containerTemplate($primaryColor, $shadow1, $shadow2, $positionTop, $height )
   position: absolute
@@ -86,3 +87,69 @@ body
     max-width: 800px
     padding: 0
     transition: all 0.2s, max-width 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.1s,height 0.3s ease 0.25s
+    @media only screen and (min-width: 500px)
+      height: 230px
+
+@mixin fadingText
+  @include centerMeColumn
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  font-size: 0.15*100vw
+  background-image: url("../assets/images/party-rays.jpg")
+  background-size: cover
+  z-index: 9
+  -webkit-animation: fadeout 6s linear forwards
+  animation: fadeout 6s linear forwards
+  @keyframes fadeout
+    0%
+      opacity: 1
+    50%
+      opacity: 1
+      font-size: 0.25*100vw
+    70%
+      opacity: 0
+    100%
+      opacity: 0
+      font-size: 0.4*100vw
+      z-index: -1
+  @-webkit-keyframes fadeout
+    0%
+    opacity: 1
+    50%
+    opacity: 1
+    font-size: 0.3*100vw
+    70%
+    opacity: 0
+    100%
+    opacity: 0
+    font-size: 0.45*100vw
+    z-index: -1
+  @media only screen and (min-width: 500px)
+    font-size: 0.05*100vw
+    @keyframes fadeout
+      0%
+        opacity: 1
+      50%
+        opacity: 1
+        font-size: 0.15*100vw
+      70%
+        opacity: 0
+      100%
+        opacity: 0
+        font-size: 0.2*100vw
+        z-index: -1
+    @-webkit-keyframes fadeout
+      0%
+      opacity: 1
+      50%
+      opacity: 1
+      font-size: 0.3*100vw
+      70%
+      opacity: 0
+      100%
+      opacity: 0
+      font-size: 0.45*100vw
+      z-index: -1
