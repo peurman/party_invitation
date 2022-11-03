@@ -70,12 +70,12 @@ class Card extends React.Component {
           <span className="button1">&#10006;</span>
           <div className="content">
             <div className="head">
-              <h1>wheeen?</h1>
+              <h1>When will be?</h1>
             </div>
             <div className="body">
               <p>
-                <b>YOU MUST</b> come on <br />
-                <em>SATURDAY MM/DD at 10 pm</em>
+                <b>YOU MUST</b> come <br />
+                <em>SATURDAY 12/17 at 10 pm</em>
                 <br />
                 Party ends at 6 am
                 <br />
@@ -84,32 +84,34 @@ class Card extends React.Component {
             </div>
           </div>
         </div>
-        <div className="where">WHERE TO GO?</div>
+        <div className="where">WHERE WILL BE?</div>
         <div className="container2">
           <span className="button2">&#10006;</span>
           <div className="content">
             <div className="head">
-              <h1>wheeere?</h1>
+              <h1>And the place is...</h1>
             </div>
             <div className="body">
               <p>
-                <em>This PLACE</em>
+                <em> 230 Fifth Ave MANHATTAN</em>
                 <br />
-                This Adress 9999
+                Copy the orange text and paste it in Google Maps...and voilà!
+                <br />
+                <label>You already know how to get there</label>
               </p>
             </div>
           </div>
         </div>
         <div className="coming">
           <span style={{ textDecoration: "line-through" }}>RSVP</span>
-          &nbsp;COMING OR WHAT?
+          &nbsp;COMING OR NOT?
         </div>
 
         <div className="container3">
           <span className="button3">&#10006;</span>
           <div className="content">
             <div className="head">
-              <h1>Of course coming...</h1>
+              <h1>Confirm your presence...</h1>
             </div>
             <div className="body">
               <p>
@@ -121,7 +123,7 @@ class Card extends React.Component {
                 </a>
                 <br />
                 <label>
-                  No answer = NO entry <br />
+                  Important: No answer means NO entry <br />
                 </label>
               </div>
             </div>
