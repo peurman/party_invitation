@@ -118,7 +118,11 @@ class Card extends React.Component {
                 Please whatsapp me <em>YES</em> or <em>NO</em> trough this link:
               </p>
               <div className="actionBar">
-                <a href="https://web.whatsapp.com/send?phone=+5491144444444&text=YES&app_absent=0">
+                <a
+                  href="https://web.whatsapp.com/send?phone=+5491144444444&text=YES&app_absent=0"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={logo} alt="WhatsApp logo" />
                 </a>
                 <br />
