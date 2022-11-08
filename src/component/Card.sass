@@ -11,7 +11,7 @@ p
   font: normal italic 17px/25px "sansita-regular"
   line-height: 20px
   padding: 0 10px
-  margin: 5px 0
+  margin: 2px 0
 
 em
   font: bold italic 22px/30px "sansita-black"
@@ -33,6 +33,7 @@ label
   @include fadingText
 
 .title
+  overflow: visible
   text-align: center
   font-family: 'sansita-black'
   letter-spacing: 3px
@@ -66,7 +67,7 @@ label
   @include containerTemplate($pinkLight, $shadowBox1, $shadowBox2, 33vh, 190px)
 
 .container3
-  @include containerTemplate($greenLight, $shadowBox1, $shadowBox2, 63vh, max(0.27*100vh,0.63*100vw))
+  @include containerTemplate($greenLight, $shadowBox1, $shadowBox2, 63vh, max(0.27*100vh,0.6*100vw))
 
 .content
   transform: translateY(100%)
@@ -110,5 +111,5 @@ label
     align-content: flex-end
     img
       display: flex
-      width: 30px
-      height: 30px
+      width: 25px
+      height: 25px
