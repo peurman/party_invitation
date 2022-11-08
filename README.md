@@ -2,7 +2,7 @@
 
 ![party-invitation](/PARTY.jpg)
 
-This project was created to practice some **CSS animations**, and also to practice *SASS*, using mixins with parameters, global variables, and *@forward/@use* instead of *@import*.
+This project was created to practice some **CSS animations**, and also the use of **`SASS`** with their main features (ariables, nesting, mixins, inheritance), using mixins with parameters, global variables, and *@forward/@use* instead of *@import*.
 
 Technologies Used:
 
