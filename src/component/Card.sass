@@ -25,7 +25,8 @@ a
   cursor: pointer
 
 label
-  font: bold italic 17px "sansita-regular"
+  font: bold normal 17px "sansita-regular"
+  margin-top: 3px
   color: $attentionColor
 
 .fade-in-title
@@ -92,6 +93,7 @@ label
     box-sizing: border-box
 
 .actionBar
+  @include centerMeColumn
   padding-top: 5px
   padding-bottom: 0
   border-top: 1px solid $greyLine
@@ -102,6 +104,11 @@ label
     text-transform: uppercase
     line-height: 30px
     color: $specialColor
+  .waWithLogo
+    margin: 7px 0
+    @include centerMeRow
+    align-content: flex-end
     img
-      width: 50px
-      height: 50px
+      display: flex
+      width: 30px
+      height: 30px

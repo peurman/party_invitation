@@ -2,6 +2,10 @@ import React from "react";
 import "./Card.sass";
 import $ from "jquery";
 import logo from "../assets/images/whatsapp_logo.png";
+import ReactWhatsapp from "react-whatsapp";
+// import { FloatingWhatsApp } from "react-floating-whatsapp-button";
+// import "react-floating-whatsapp-button/dist/index.css";
+// import { render } from "react-dom";
 
 var button1 = false;
 var button2 = false;
@@ -79,7 +83,7 @@ class Card extends React.Component {
                 <br />
                 Party ends at 6 am
                 <br />
-                <label>(doors will be closed till that hour!)</label>
+                <label> 🚨Doors will be closed till that hour!😉</label>
               </p>
             </div>
           </div>
@@ -95,9 +99,11 @@ class Card extends React.Component {
               <p>
                 <em> 230 Fifth Ave MANHATTAN</em>
                 <br />
-                Copy the orange text and paste it in Google Maps...and voilà!
+                ➔ Copy the orange text
                 <br />
-                <label>You already know how to get there</label>
+                ➔ Paste it in Google Maps...and voilà!
+                <br />
+                <label>You already know how to get there! 💪</label>
               </p>
             </div>
           </div>
@@ -115,19 +121,40 @@ class Card extends React.Component {
             </div>
             <div className="body">
               <p>
-                Please whatsapp me <em>YES</em> or <em>NO</em> trough this link:
+                Please whatsapp me <em>YES</em> or <em>NO</em>:
               </p>
               <div className="actionBar">
-                <a
-                  href="https://web.whatsapp.com/send?phone=+5491144444444&text=YES&app_absent=0"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={logo} alt="WhatsApp logo" />
-                </a>
-                <br />
+                <div>
+                  ➔ with your cellphone:&nbsp;
+                  <ReactWhatsapp
+                    number="+5492234484060"
+                    message="YES, I'll be there!"
+                  />
+                </div>
+                <div className="waWithLogo">
+                  ➔ with WhatsApp Web:&nbsp;
+                  <a
+                    href="https://web.whatsapp.com/send?phone=+5492234484060&text=YES,%20I'll%20be%20there!&app_absent=0"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={logo} alt="WhatsApp logo" />
+                  </a>
+                </div>
+                {/*<img
+                  src={logo}
+                  alt="WhatsApp logo"
+                  onClick={render(
+                    <ReactWhatsapp
+                      number="+5492234484060"
+                      message="Hello World!!!"
+                    />,
+                    document.getElementById("actionBar")
+                  )}
+                />
+                <br />*/}
                 <label>
-                  Important: No answer means NO entry <br />
+                  🚨Important: No answer means NO entry <br />
                 </label>
               </div>
             </div>
