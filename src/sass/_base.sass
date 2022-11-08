@@ -1,4 +1,5 @@
 *
+  overflow: hidden
   animation: fadein .25s
   @keyframes fadein
     0%
@@ -53,7 +54,6 @@ body
   font-size: 0.08 * 100vw
   font-family: "sansita-blackitalic"
   letter-spacing: 1.5px
-  // font-weight: bolder
   text-shadow: 2px 1px 2px $secondaryColor
   -moz-text-shadow: 2px 1px 2px $secondaryColor
   -webkit-text-shadow: 2px 1px 2px $secondaryColor
@@ -84,11 +84,12 @@ body
     border-radius: 15px
     width: 90%
     height: $height
-    max-width: 800px
+    max-width: calc( 0.9*100vw)
     padding: 0
     transition: all 0.2s, max-width 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.1s,height 0.3s ease 0.25s
     @media only screen and (min-width: 500px)
       height: 230px
+      width: 500px
 
 @mixin fadingText
   @include centerMeColumn

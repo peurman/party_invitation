@@ -100,16 +100,16 @@ class Card extends React.Component {
                 <em> 230 Fifth Ave MANHATTAN</em>
                 <br />
                 ➔ Copy the orange text
-                <br />
-                ➔ Paste it in Google Maps...and voilà!
-                <br />
-                <label>You already know how to get there! 💪</label>
+                <br />➔ Paste it in Google Maps...and voilà!
               </p>
+              <label>You already know how to get there! 💪</label>
             </div>
           </div>
         </div>
         <div className="coming">
-          <span style={{ textDecoration: "line-through" }}>RSVP</span>
+          <span style={{ textDecoration: "line-through" }}>
+            &nbsp;RSVP&nbsp;
+          </span>
           &nbsp;COMING OR NOT?
         </div>
 

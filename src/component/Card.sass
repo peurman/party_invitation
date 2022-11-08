@@ -3,15 +3,15 @@
 h1
   font: bold italic 23px "sansita-regular"
   position: absolute
-  top: -6.2vh
+  top: -2.2vh
   width: 100%
   color: $mainColor
 
 p
   font: normal italic 17px/25px "sansita-regular"
   line-height: 20px
-  padding: 0 20px
-  margin: 10px 0
+  padding: 0 10px
+  margin: 5px 0
 
 em
   font: bold italic 22px/30px "sansita-black"
@@ -66,7 +66,7 @@ label
   @include containerTemplate($pinkLight, $shadowBox1, $shadowBox2, 33vh, 190px)
 
 .container3
-  @include containerTemplate($greenLight, $shadowBox1, $shadowBox2, 63vh, max(0.33*100vh,0.65*100vw))
+  @include containerTemplate($greenLight, $shadowBox1, $shadowBox2, 63vh, max(0.27*100vh,0.63*100vw))
 
 .content
   transform: translateY(100%)
@@ -76,13 +76,13 @@ label
   text-align: left
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s 0.2s
   .expand &
-    transform: translateY(0px)
+    transform: translateY(-30px)
     opacity: 1
     transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.05s, opacity 0s
   & .head
     text-align: left
     margin-left: 20px
-    margin-top: min(0.015*100vh,10px)
+    margin-top: min(5.5vh, 32px)
   & .body
     color: $blackColor
     background-color: $mainColor
