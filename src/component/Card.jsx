@@ -83,8 +83,8 @@ class Card extends React.Component {
                 <br />
                 Party ends at 6 am
                 <br />
-                <label> 🚨Doors will be closed till that hour!😉</label>
               </p>
+              <label> 🚨Doors will be closed till that hour!😉</label>
             </div>
           </div>
         </div>
@@ -93,11 +93,12 @@ class Card extends React.Component {
           <span className="button2">&#10006;</span>
           <div className="content">
             <div className="head">
-              <h1>And the place is...</h1>
+              <h1>We'll be partying at...</h1>
             </div>
             <div className="body">
+              <h3>ELEMENTARY</h3>
               <p>
-                <em> 230 Fifth Ave MANHATTAN</em>
+                <em> 221B Baker St., London, UK</em>
                 <br />
                 ➔ Copy the orange text
                 <br />➔ Paste it in Google Maps...and voilà!
@@ -117,19 +118,21 @@ class Card extends React.Component {
           <span className="button3">&#10006;</span>
           <div className="content">
             <div className="head">
-              <h1>Confirm your presence...</h1>
+              <h1>Confirm your presence</h1>
             </div>
             <div className="body">
               <p>
-                Please whatsapp me <em>YES</em> or <em>NO</em>:
+                Please whatsapp me <em>YES</em> or <em>NO</em>...
               </p>
               <div className="actionBar">
-                <div>
-                  ➔ with your cellphone:&nbsp;
-                  <ReactWhatsapp
-                    number="+5492234484060"
-                    message="YES, I'll be there!"
-                  />
+                <div className="waWithLogo">
+                  ➔ with your phone:&nbsp;
+                  <div className="imgButton">
+                    <ReactWhatsapp
+                      number="+5492234484060"
+                      message="YES, I'll be there!"
+                    />
+                  </div>
                 </div>
                 <div className="waWithLogo">
                   ➔ with WhatsApp Web:&nbsp;
@@ -141,20 +144,8 @@ class Card extends React.Component {
                     <img src={logo} alt="WhatsApp logo" />
                   </a>
                 </div>
-                {/*<img
-                  src={logo}
-                  alt="WhatsApp logo"
-                  onClick={render(
-                    <ReactWhatsapp
-                      number="+5492234484060"
-                      message="Hello World!!!"
-                    />,
-                    document.getElementById("actionBar")
-                  )}
-                />
-                <br />*/}
                 <label>
-                  🚨Important: No answer means NO entry <br />
+                  🚨Important: NO answer means NO entry <br />
                 </label>
               </div>
             </div>
