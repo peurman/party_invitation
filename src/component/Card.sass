@@ -1,5 +1,9 @@
 @use '../sass' as *
 
+$transition: .3s cubic-bezier(0.95, 0.05, 0.795, 0.035)
+$height: 30px
+$width: $height*2 + 10px
+
 h1
   font: bold italic 23px "sansita-regular"
   position: absolute
@@ -60,22 +64,22 @@ label
   transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1)
 
 .when
-  @include everyPart($blueLight,$blueDark, 13vh)
+  @include everyPart($blueLight,$blueDark, 16.4vh)
 
 .where
-  @include everyPart($pinkLight,$pinkDark, 43vh)
+  @include everyPart($pinkLight,$pinkDark, 45vh)
 
 .coming
-  @include everyPart($greenLight,$greenDark, 76vh)
+  @include everyPart($greenLight,$greenDark, 77.5vh)
 
 .container1
-  @include containerTemplate($blueLight, $shadowBox1, $shadowBox2, 3vh, 190px)
+  @include containerTemplate($blueLight, $shadowBox1, $shadowBox2, 5.6vh, 182px)
 
 .container2
-  @include containerTemplate($pinkLight, $shadowBox1, $shadowBox2, 33vh, 210px)
+  @include containerTemplate($pinkLight, $shadowBox1, $shadowBox2, 34vh, 210px)
 
 .container3
-  @include containerTemplate($greenLight, $shadowBox1, $shadowBox2, 66vh, max(0.25*100vh,0.58*100vw))
+  @include containerTemplate($greenLight, $shadowBox1, $shadowBox2, 66.5vh, max(0.25*100vh,0.58*100vw))
 
 .content
   transform: translateY(100%)
@@ -122,7 +126,62 @@ label
       height: 25px
     .imgButton
       display: flex
-      // background-image: url("../assets/images/whatsapp_logo.png")
-      // background-position: center
       width: 20px
       height: 20px
+
+.langSelector
+  position: absolute
+  top: 5px
+  right: 5px
+  .switch
+    transition: $transition
+    width: $width
+    height: $height
+    border-radius: $height
+    border: 2px solid $greyBack
+    background-color: $greyBack
+    position: relative
+    @include centerMeRow
+    outline: none
+    cursor: pointer
+    overflow: visible
+    &::after
+      display: block
+      width: $height*.87
+      height: $height*.87
+      background-color: $yellowLight
+      position: absolute
+      left: $width/2*.87
+      margin-left: 4px
+      padding: 0px 1px
+      border-radius: 50%
+      box-shadow: 0 1px 2px rgba(black, .4),0 3px 2px rgba(black,.4)
+      content: "ESP"
+      font: bold normal 10.4px "Verdana"
+      color: $orangeDark
+      @include centerMeRow
+      transition: .3s
+    &.active
+      border: 2px solid $blueTransp
+      background-color: $blueTransp
+      transition: .3s
+      &::after
+        background-color: $attentionColor
+        color: $mainColor
+        left: 0
+        content: "ENG"
+        transition: .3s
+    span
+      width: $height*2*.84
+      height: $height*.84
+      line-height: 30px
+      display: block
+      background: none
+      img
+        height: $height*.84
+    .langESP
+      @include centerMeRow
+      justify-content: flex-start
+    .langENG
+      @include centerMeRow
+      justify-content: flex-end
