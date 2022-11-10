@@ -62,7 +62,7 @@ function Card() {
                 La fiesta termina <b>a las 6 am</b>
                 <br />
               </p>
-              <label>🚨OJO: puertas cerradas hasta esa hora!😉</label>
+              <label>🚨 puertas cerradas hasta esa hora!😉</label>
             </div>
           </div>
         ) : (
@@ -135,12 +135,7 @@ function Card() {
         )}
       </div>
       {spanishLang ? (
-        <div className="coming">
-          <span style={{ textDecoration: "line-through" }}>
-            &nbsp;RSVP&nbsp;
-          </span>
-          &nbsp;VENÍS O NO?&nbsp;
-        </div>
+        <div className="coming">&nbsp;VENÍS O NO?&nbsp;</div>
       ) : (
         <div className="coming">
           <span style={{ textDecoration: "line-through" }}>
@@ -175,14 +170,14 @@ function Card() {
                   <div className="imgButton">
                     <ReactWhatsapp
                       number="+5492234484060"
-                      message="YES, I'll be there!"
+                      message="SI, voy de una!!"
                     />
                   </div>
                 </div>
                 <div className="waWithLogo">
                   ➔&nbsp;<b>desde la compu&nbsp;</b>:&nbsp;
                   <a
-                    href="https://web.whatsapp.com/send?phone=+5492234484060&text=YES,%20I'll%20be%20there!&app_absent=0"
+                    href="https://web.whatsapp.com/send?phone=+5492234484060&text=SI,%20voy%20de%20una!!&app_absent=0"
                     target="_blank"
                     rel="noreferrer"
                   >
